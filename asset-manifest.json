@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/team-app/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/team-app/static/js/main.afbc5128.chunk.js",
+    "main.js.map": "/team-app/static/js/main.afbc5128.chunk.js.map",
+    "runtime-main.js": "/team-app/static/js/runtime-main.62fff233.js",
+    "runtime-main.js.map": "/team-app/static/js/runtime-main.62fff233.js.map",
+    "static/js/2.7a7259fc.chunk.js": "/team-app/static/js/2.7a7259fc.chunk.js",
+    "static/js/2.7a7259fc.chunk.js.map": "/team-app/static/js/2.7a7259fc.chunk.js.map",
+    "index.html": "/team-app/index.html",
+    "precache-manifest.0a94f2cba59431d2af560c8ffbf4755f.js": "/team-app/precache-manifest.0a94f2cba59431d2af560c8ffbf4755f.js",
+    "service-worker.js": "/team-app/service-worker.js",
+    "static/css/main.27fd15f6.chunk.css.map": "/team-app/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.7a7259fc.chunk.js.LICENSE.txt": "/team-app/static/js/2.7a7259fc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62fff233.js",
+    "static/js/2.7a7259fc.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.afbc5128.chunk.js"
+  ]
+}
