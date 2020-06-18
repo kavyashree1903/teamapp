@@ -8,7 +8,7 @@ class SideMenu extends Component{
 		state = {
 
 		}
-		var buttonList = this.props.buttons.map((button) => { //this.props.buttons will each have unique onclick listeners
+		const buttonList = this.props.buttons.map((button) => { //this.props.buttons will each have unique onclick listeners
 			return (
 				<li>
 					<SideMenuButton 

@@ -1,12 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
+import SideMenu from './Components/Individual/Essentials/Side_Menu/side_menu.js'
 
-function App() {
-  return (
-    <div className="App">
-      <p>Worc</p>
-    </div>
-  );
+class App extends Component{
+	constructor(){
+		this.state = {}
+		var sideMenuButtons = [
+			{
+				name: "Button 1",
+				clicked: () => console.log("Button 1 pressed") //will eventually change to interact with database
+			},
+			{
+				name: "Button 2",
+				clicked: () => console.log("Button 2 pressed") //will eventually change to interact with database
+			}
+		]
+	}
+
+	render(){
+		return(
+			<SideMenu buttons={sideMenuButtons} />
+		)
+	}
 }
 
 export default App;
