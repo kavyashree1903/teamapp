@@ -14,7 +14,6 @@ class SideMenu extends Component{
 						text={button.name} 
 						onClick={button.clicked}
 					/>
-					
 				</li>
 			)
 		})
