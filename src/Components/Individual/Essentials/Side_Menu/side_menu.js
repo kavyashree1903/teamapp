@@ -9,23 +9,23 @@ class SideMenu extends Component{
 		}
 		var buttonList = this.props.buttons.map((button) => { //this.props.buttons will each have unique onclick listeners
 			return (
-					<li class="side-menu-button">
-						<Button 
-							text={button.name} 
-							onClick={button.clicked}
-						/>
-						
-					</li>
-				)
+				<li class="side-menu-button">
+					<Button 
+						text={button.name} 
+						onClick={button.clicked}
+					/>
+					
+				</li>
+			)
 		})
 	}
 
 	render(){
-		return{
+		return(
 			<div class="side-menu">
 				{buttonList}
 			</div>
-		}
+		)
 	}
 }
 
