@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import SideMenuButton from './side_menu_button/side_menu_button.js'
 
 
 class SideMenu extends Component{
@@ -9,8 +9,8 @@ class SideMenu extends Component{
 		}
 		var buttonList = this.props.buttons.map((button) => { //this.props.buttons will each have unique onclick listeners
 			return (
-				<li class="side-menu-button">
-					<Button 
+				<li>
+					<SideMenuButton 
 						text={button.name} 
 						onClick={button.clicked}
 					/>
@@ -22,7 +22,7 @@ class SideMenu extends Component{
 
 	render(){
 		return(
-			<div class="side-menu">
+			<div className="side-menu">
 				{buttonList}
 			</div>
 		)
