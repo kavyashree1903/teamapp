@@ -1,4 +1,6 @@
 import React from 'react'
+import './side_menu_button.css';
+
 
 const sideMenuButton = (props) => {
 	return(

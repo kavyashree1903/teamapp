@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import SideMenuButton from './side_menu_button/side_menu_button.js'
+import './side_menu.css'
 
 
 class SideMenu extends Component{
