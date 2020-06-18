@@ -4,8 +4,8 @@ import SideMenu from './Components/Individual/Essentials/Side_Menu/side_menu.js'
 
 class App extends Component{
 	constructor(){
-		this.state = {}
-		var sideMenuButtons = [
+		super()
+		this.sideMenuButtons = [
 			{
 				name: "Button 1",
 				clicked: () => console.log("Button 1 pressed") //will eventually change to interact with database
@@ -13,13 +13,33 @@ class App extends Component{
 			{
 				name: "Button 2",
 				clicked: () => console.log("Button 2 pressed") //will eventually change to interact with database
+			},
+			{
+				name: "Button 1",
+				clicked: () => console.log("Button 1 pressed") //will eventually change to interact with database
+			},
+			{
+				name: "Button 1",
+				clicked: () => console.log("Button 1 pressed") //will eventually change to interact with database
+			},
+			{
+				name: "Button 1",
+				clicked: () => console.log("Button 1 pressed") //will eventually change to interact with database
+			},
+			{
+				name: "Button 1",
+				clicked: () => console.log("Button 1 pressed") //will eventually change to interact with database
+			},
+			{
+				name: "Button 1",
+				clicked: () => console.log("Button 1 pressed") //will eventually change to interact with database
 			}
 		]
 	}
 
 	render(){
 		return(
-			<SideMenu buttons={sideMenuButtons} />
+			<SideMenu buttons={this.sideMenuButtons} />
 		)
 	}
 }

@@ -4,26 +4,26 @@ import './side_menu.css'
 
 
 class SideMenu extends Component{
-	constructor(){
-		state = {
-
-		}
-		const buttonList = this.props.buttons.map((button) => { //this.props.buttons will each have unique onclick listeners
+	constructor(props){
+		super(props)
+		this.buttonList = this.props.buttons.map((button) => { //this.props.buttons will each have unique onclick listeners
 			return (
-				<li>
+				<div>
 					<SideMenuButton 
 						text={button.name} 
 						onClick={button.clicked}
 					/>
-				</li>
+				</div>
 			)
 		})
 	}
 
 	render(){
 		return(
-			<div className="side-menu">
-				{buttonList}
+			<div className="container-side-menu">
+				<div className="side-menu">
+					{this.buttonList}
+				</div>
 			</div>
 		)
 	}
