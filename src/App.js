@@ -18,7 +18,7 @@ class App extends Component{
 		]
 		//write code for left and right side menu on-click listeners
 		//write code for the slide in slide out animation
-		//write code for blurring background when sied menu is shown
+		//write code for blurring background when side menu is shown
 	}
 
 	render(){
