@@ -1,38 +1,33 @@
 #nav {
-	float: left; 
-}
-
-#nav {
+	position: fixed;
+	overflow: hidden;
 	margin: 0;
+	top: 0;
 	width: 100%;
 	padding: 0;
 	background-color: #047082;
 	height: 6vh;
-
 }
 
-.container-navbar{
+.container-navbar, span{
 	text-align: center;
 }
 
 .app-title{
+	position: fixed;
 	text-decoration: none;
 	font-style: normal;
 	font-weight: normal;
 	color: #FFFFFF;
 	font-size: 4vh;
-	width: 20vh;
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	margin-top: 1vh;
-	margin-bottom: 1vh;
-
 }
 
 .left-hamburger{
-	position: absolute;
+	position: fixed;
 	left: 0vh;
 	top: 0vh;
 	padding: 0vh;
@@ -46,7 +41,7 @@
 }
 
 .right-hamburger{
-	position: absolute;
+	position: fixed;
 	right: 0vh;
 	top: 0vh;
 	padding: 0vh;

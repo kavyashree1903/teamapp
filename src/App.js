@@ -23,10 +23,12 @@ class App extends Component{
 
 	render(){
 		return(
-			<div className="container-app">
+			<React.Fragment>
 				<Navbar hamburger-left={this.toggleLeftSideMenu} hamburger-right={this.toggleRightSideMenu} />
-				<SideMenu buttons={this.sideMenuButtons} />
-			</div>
+				<div className="container-app">
+					<SideMenu buttons={this.sideMenuButtons} />
+				</div>
+			</React.Fragment>
 		)
 	}
 }
