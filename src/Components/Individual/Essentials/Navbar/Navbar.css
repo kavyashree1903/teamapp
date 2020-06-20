@@ -1,0 +1,78 @@
+#nav {
+    width: 100%;
+    float: left;
+    margin: 0 0 3em 0;
+    padding: 0;
+    list-style: none; }
+#nav li {
+    float: left; }
+#nav {
+        width: 100%;
+        float: left;
+        margin: 0 0 3em 0;
+        padding: 0;
+        list-style: none;
+        background-color: #047082;
+        height: 85px;
+
+    }
+#nav li a {
+            display: block;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ffffff;
+}
+.container-navbar{
+    text-align: center;
+text-decoration: none;
+margin-top: 14px;
+}
+.app-title{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+    width: 48.75px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    height: 38px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    margin-top: 15px;
+
+}
+
+.left-hamburger{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    border: none;
+    font-size: 0px;
+    background: transparent;
+    cursor: pointer;
+    width: 48.75px;
+    margin: 8px 15px;
+    margin-top: 15px;
+}
+.right-hamburger{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 0px;
+    border: none;
+    font-size: 0px;
+    width: 48.75px;
+    margin: 8px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+
+
+}
