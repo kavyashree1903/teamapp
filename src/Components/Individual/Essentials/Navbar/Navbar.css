@@ -82,3 +82,7 @@
 	margin-top: 15px;
 	cursor: pointer;
 }
+
+ul#nav{
+	margin-bottom: 0px;
+}
