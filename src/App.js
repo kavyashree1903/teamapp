@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import SideMenu from './Components/Individual/Essentials/Side_Menu/side_menu.js'
-import Navbar from './Components/Individual/Essentials/Navbar/navbar.js'
+import Navbar from './Components/Individual/Essentials/Navbar/Navbar.js'
 
 class App extends Component{
 	constructor(){
