@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import SideMenuButton from './side_menu_button/side_menu_button.js'
 import './side_menu.css'
 
-
 class SideMenu extends Component{
 	constructor(props){
 		super(props)
@@ -20,7 +19,7 @@ class SideMenu extends Component{
 
 	render(){
 		return(
-			<div className="container-side-menu">
+			<div className={this.props.stateClasses}>
 				<div className="side-menu">
 					{this.buttonList}
 				</div>
