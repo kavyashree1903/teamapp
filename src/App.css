@@ -4,7 +4,13 @@ body{
 }
 
 .blur-background{
+	transition: 0.2s;
 	filter: blur(20px);
+}
+
+.sharp-background{
+	transition: 0.2s;
+	filter: blur(0px);
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 

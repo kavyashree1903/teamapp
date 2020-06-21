@@ -57,6 +57,7 @@ class Navbar extends Component{
 			sideMenuClassesLeft = "container-side-menu-left hide-left"
 			sideMenuClassesRight = "container-side-menu-right hide-right"
 			document.querySelector('.container-app').classList.remove('blur-background')
+			document.querySelector('.container-app').classList.add('sharp-background')
 		}
 		else{
 			this.setState(
@@ -67,6 +68,7 @@ class Navbar extends Component{
 			)//open left sidebar and update classes
 			sideMenuClassesLeft = "container-side-menu-left show-left"
 			sideMenuClassesRight = "container-side-menu-right hide-right"
+			document.querySelector('.container-app').classList.remove('sharp-background')
 			document.querySelector('.container-app').classList.add('blur-background')
 			//add code to change buttons
 		}
@@ -83,6 +85,7 @@ class Navbar extends Component{
 			sideMenuClassesLeft = "container-side-menu-left hide-left"
 			sideMenuClassesRight = "container-side-menu-right hide-right"
 			document.querySelector('.container-app').classList.remove('blur-background')
+			document.querySelector('.container-app').classList.add('sharp-background')
 		}
 		else{
 			this.setState(
@@ -94,6 +97,7 @@ class Navbar extends Component{
 			sideMenuClassesLeft = "container-side-menu-left hide-left"
 			sideMenuClassesRight = "container-side-menu-right show-right"
 			document.querySelector('.container-app').classList.add('blur-background')
+			document.querySelector('.container-app').classList.remove('sharp-background')
 			//add code to change buttons
 		}
 		
