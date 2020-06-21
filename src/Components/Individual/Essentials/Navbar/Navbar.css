@@ -56,3 +56,7 @@
 div#nav{
 	margin-bottom: 0vh
 }
+
+.left-hamburger, .right-hamburger:hover{
+	font-color: #00C4C4;
+}
