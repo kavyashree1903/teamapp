@@ -14,12 +14,24 @@
 
 .right{
 	right: 0;
+	transition: 0.2s;
 }
 
 .left{
-	left: 0;
+	transition: 0.2s;
+	left:0;
 }
 
-.hide {
-	display: none;
+.hide-left {
+	visibility: hidden;
+	transition: 0.2s;
+	left: -20%;
+}
+.hide-right{
+	visibility: hidden;
+	transition: 0.2s;
+	right: -20%;
+}
+.background-blur{
+	filter: blur(20px);
 }

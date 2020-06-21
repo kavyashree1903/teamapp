@@ -4,7 +4,7 @@ import './Navbar.css';
 import SideMenu from '../Side_Menu/side_menu.js'
 
 
-var sideMenuClasses = 'container-side-menu hide';
+var sideMenuClasses = 'container-side-menu hide-left';
 class Navbar extends Component{
 	constructor(props){
 		super(props)
@@ -32,7 +32,7 @@ class Navbar extends Component{
 				name: "Button 2",
 				clicked: () => console.log("Button 2 pressed") //will eventually change to interact with database
 			}
-		]
+		]//will be changed depending on which menu is clicked
 	}
 	leftSideMenuClick(currentState){
 		if(currentState.left === true && currentState.right === false){
@@ -42,7 +42,7 @@ class Navbar extends Component{
 					left: false
 				}
 			)
-			sideMenuClasses = "container-side-menu hide"
+			sideMenuClasses = "container-side-menu hide-left"
 		}
 		else{
 			this.setState(
@@ -52,6 +52,7 @@ class Navbar extends Component{
 				}
 			)
 			sideMenuClasses = "container-side-menu left"
+			//add code to change buttons
 		}
 		
 	}
@@ -63,7 +64,7 @@ class Navbar extends Component{
 					left: false
 				}
 			)
-			sideMenuClasses = "container-side-menu hide"
+			sideMenuClasses = "container-side-menu hide-right"
 		}
 		else{
 			this.setState(
@@ -73,6 +74,7 @@ class Navbar extends Component{
 				}
 			)
 			sideMenuClasses = "container-side-menu right"
+			//add code to change buttons
 		}
 		
 	}
