@@ -6,6 +6,10 @@
 	line-height: 4vh;
 	text-align: center;
 	color: #FFFFFF;
+	cursor: pointer;
+}
+.side-menu-button:hover{
+	color: #00C4C4;
 }
 .container-side-menu-button{
 	max-height: 100vh;
