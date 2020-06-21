@@ -5,33 +5,20 @@
 	justify-content: flex-start;
 	background: #047082;
 }
-.container-side-menu{
+.container-side-menu-right{
 	position: fixed;
 	width: 20%;
 	flex-direction: column;
 	justify-content: flex-end;
 }
 
-.right{
+.show-right{
 	right: 0;
 	transition: 0.2s;
 }
 
-.left{
-	transition: 0.2s;
-	left:0;
-}
-
-.hide-left {
-	visibility: hidden;
-	transition: 0.2s;
-	left: -20%;
-}
 .hide-right{
 	visibility: hidden;
 	transition: 0.2s;
 	right: -20%;
-}
-.background-blur{
-	filter: blur(20px);
 }

@@ -1,10 +1,12 @@
 import React from 'react';
 import {Component} from 'react';
 import './Navbar.css';
-import SideMenu from '../Side_Menu/side_menu.js'
+import SideMenuLeft from '../Side_Menu_Left/side_menu.js'
+import SideMenuRight from '../Side_Menu_Right/side_menu.js'
 
 
-var sideMenuClasses = 'container-side-menu hide-left';
+var sideMenuClassesLeft = 'container-side-menu-left hide-left';
+var sideMenuClassesRight = 'container-side-menu-right hide-right';
 class Navbar extends Component{
 	constructor(props){
 		super(props)
@@ -23,14 +25,24 @@ class Navbar extends Component{
 		this.state = {
 			...this.offState
 		}
-		this.sideMenuButtons = [
+		this.sideMenuButtonsLeft = [
 			{
-				name: "Button 1",
-				clicked: () => console.log("Button 1 pressed") //will eventually change to interact with database
+				name: "Team 1",
+				clicked: () => console.log("Team 1 clicked") //will eventually change to interact with database
 			},
 			{
-				name: "Button 2",
-				clicked: () => console.log("Button 2 pressed") //will eventually change to interact with database
+				name: "Team 2",
+				clicked: () => console.log("Team 2 Clicked") //will eventually change to interact with database
+			}
+		]
+		this.sideMenuButtonsRight = [
+			{
+				name: "Schedule a Meeting",
+				clicked: () => console.log("Meeting Scheduled") //will eventually change to interact with database
+			},
+			{
+				name: "Assign a Task",
+				clicked: () => console.log("Task Assigned") //will eventually change to interact with database
 			}
 		]//will be changed depending on which menu is clicked
 	}
@@ -42,7 +54,8 @@ class Navbar extends Component{
 					left: false
 				}
 			)
-			sideMenuClasses = "container-side-menu hide-left"
+			sideMenuClassesLeft = "container-side-menu-left hide-left"
+			sideMenuClassesRight = "container-side-menu-right hide-right"
 		}
 		else{
 			this.setState(
@@ -51,7 +64,8 @@ class Navbar extends Component{
 					left: true
 				}
 			)
-			sideMenuClasses = "container-side-menu left"
+			sideMenuClassesLeft = "container-side-menu-left show-left"
+			sideMenuClassesRight = "container-side-menu-right hide-right"
 			//add code to change buttons
 		}
 		
@@ -64,7 +78,8 @@ class Navbar extends Component{
 					left: false
 				}
 			)
-			sideMenuClasses = "container-side-menu hide-right"
+			sideMenuClassesLeft = "container-side-menu-left hide-left"
+			sideMenuClassesRight = "container-side-menu-right hide-right"
 		}
 		else{
 			this.setState(
@@ -73,13 +88,13 @@ class Navbar extends Component{
 					left: false
 				}
 			)
-			sideMenuClasses = "container-side-menu right"
+			sideMenuClassesLeft = "container-side-menu-left hide-left"
+			sideMenuClassesRight = "container-side-menu-right show-right"
 			//add code to change buttons
 		}
 		
 	}
 	render() {
-		var sideMenu = <SideMenu stateClasses={sideMenuClasses} buttons={[]}/>
 		return (
 			<React.Fragment>
 				<div>
@@ -91,7 +106,8 @@ class Navbar extends Component{
 						 </div>
 					</div>
 				</div>
-				 <SideMenu stateClasses={sideMenuClasses} buttons={this.sideMenuButtons}/>
+				 <SideMenuLeft stateClasses={sideMenuClassesLeft} buttons={this.sideMenuButtonsLeft}/>
+				 <SideMenuRight stateClasses={sideMenuClassesRight} buttons={this.sideMenuButtonsRight}/>
 			 </React.Fragment>
 		)
 	}

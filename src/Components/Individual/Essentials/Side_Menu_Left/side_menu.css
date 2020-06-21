@@ -5,19 +5,14 @@
 	justify-content: flex-start;
 	background: #047082;
 }
-.container-side-menu{
+.container-side-menu-left{
 	position: fixed;
 	width: 20%;
 	flex-direction: column;
 	justify-content: flex-end;
 }
 
-.right{
-	right: 0;
-	transition: 0.2s;
-}
-
-.left{
+.show-left{
 	transition: 0.2s;
 	left:0;
 }
@@ -26,12 +21,4 @@
 	visibility: hidden;
 	transition: 0.2s;
 	left: -20%;
-}
-.hide-right{
-	visibility: hidden;
-	transition: 0.2s;
-	right: -20%;
-}
-.background-blur{
-	filter: blur(20px);
 }
