@@ -47,13 +47,13 @@ class Navbar extends Component{
 		]//will be changed depending on which menu is clicked
 	}
 	leftSideMenuClick(currentState){
-		if(currentState.left === true && currentState.right === false){
+		if(currentState.left === true && currentState.right === false){//if left sidebar is open
 			this.setState(
 				{
 					right: false,
 					left: false
 				}
-			)
+			)//close left sidebar and update classes
 			sideMenuClassesLeft = "container-side-menu-left hide-left"
 			sideMenuClassesRight = "container-side-menu-right hide-right"
 		}
@@ -63,7 +63,7 @@ class Navbar extends Component{
 					right: false,
 					left: true
 				}
-			)
+			)//open left sidebar and update classes
 			sideMenuClassesLeft = "container-side-menu-left show-left"
 			sideMenuClassesRight = "container-side-menu-right hide-right"
 			//add code to change buttons
@@ -71,13 +71,13 @@ class Navbar extends Component{
 		
 	}
 	rightSideMenuClick(currentState){
-		if(currentState.left === false && currentState.right === true){
+		if(currentState.left === false && currentState.right === true){//if right sidebar is open
 			this.setState(
 				{
 					right: false,
 					left: false
 				}
-			)
+			)//clse right sidebar and update classes
 			sideMenuClassesLeft = "container-side-menu-left hide-left"
 			sideMenuClassesRight = "container-side-menu-right hide-right"
 		}
@@ -87,7 +87,7 @@ class Navbar extends Component{
 					right: true,
 					left: false
 				}
-			)
+			)//open right sidebar and update classes
 			sideMenuClassesLeft = "container-side-menu-left hide-left"
 			sideMenuClassesRight = "container-side-menu-right show-right"
 			//add code to change buttons
