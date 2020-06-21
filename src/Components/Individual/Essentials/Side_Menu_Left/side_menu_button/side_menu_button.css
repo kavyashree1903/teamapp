@@ -1,0 +1,21 @@
+.side-menu-button{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3vh;
+	line-height: 4vh;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.side-menu-button:hover{
+	color: #00C4C4;
+}
+.container-side-menu-button{
+	max-height: 100vh;
+}
+
+hr{
+	margin: 0px;
+	padding: 0px;
+}
