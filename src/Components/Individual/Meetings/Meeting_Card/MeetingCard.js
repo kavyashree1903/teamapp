@@ -18,7 +18,7 @@ class MeetingCard extends Component {
                             width: "22vh",
                             height: "23vh",
                             background: "#C4C4C4",
-                            boxShadow: "4px 7px 4px rgba(0, 0, 0, 0.5)",
+                            boxShadow: "-4px -4px -4px #ffffff, 4px 4px 4px #000000",
                             borderRadius: "3vh",
                             textAlign: "center",
                         }}

@@ -9,8 +9,15 @@ body {
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 
-.meeting-dashboard {
+.container-app {
+  position: absolute;
+  z-index: -1;
+}
+
+.meeting-dashboard{
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
+

@@ -16,6 +16,7 @@
 .card-container {
     text-align: center;
     font-family: "Montserrat", sans-serif;
+    flex-wrap: wrap;
 }
 .card-venue {
     font-family: "Montserrat", sans-serif;

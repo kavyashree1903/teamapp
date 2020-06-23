@@ -11,6 +11,7 @@ class MeetingDashboard extends Component {
                     <MeetingCard />
                     <MeetingCard />
                     <MeetingCard />
+                    <MeetingCard />
                 </div>
             </div>
         );
