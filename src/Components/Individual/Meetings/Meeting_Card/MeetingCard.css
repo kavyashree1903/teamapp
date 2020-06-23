@@ -1,0 +1,43 @@
+.card-title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.575vh;
+    color: #000000;
+}
+
+.card-date {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.931vh;
+    color: #000000;
+}
+.card-container {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+.card-venue {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.931vh;
+    color: #000000;
+}
+.card-description {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.931vh;
+    color: #000000;
+}
+
+.icons-meeting {
+    cursor: pointer;
+}
+.flippy-container * {
+    box-sizing: border-box;
+}
+.card-content {
+    margin-bottom: 15px;
+}
