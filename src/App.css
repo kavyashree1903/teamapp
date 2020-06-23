@@ -3,11 +3,15 @@ body {
   margin-top: 6vh;
 }
 
-.blur-background {
-  filter: blur(20px);
+.blur-background{
+	transition: 0.2s;
+	filter: blur(20px);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+.sharp-background{
+	transition: 0.2s;
+	filter: blur(0px);
+}
 
 .container-app {
   position: absolute;
@@ -20,4 +24,5 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
