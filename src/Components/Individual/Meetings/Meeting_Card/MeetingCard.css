@@ -16,7 +16,7 @@
 .card-container {
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
-	justify-content: center;
+	/*justify-content: center;*/
 }
 .card-venue {
 	font-family: "Montserrat", sans-serif;
@@ -79,6 +79,7 @@
 	font-weight: normal;
 	font-size: 1.931vh;
 	overflow-y: scroll;
+	line-height: 3vh;
 }
 .up-arrow{
 	height:1vh;
