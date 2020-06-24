@@ -18,7 +18,8 @@ class App extends Component {
         />
         <div className="container-app">
           <div className="meeting-dashboard">
-            <MeetingDashboard />
+              <div className="dashboard">  <MeetingDashboard /></div>
+
           </div>
         </div>
       </React.Fragment>

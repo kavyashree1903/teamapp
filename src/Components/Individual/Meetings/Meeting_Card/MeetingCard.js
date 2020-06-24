@@ -39,8 +39,18 @@ class MeetingCard extends Component {
           </FrontSide>
 
           <BackSide className="backcard">
-            <div className="card-description">
-              Lorem Ipsum is simply dummy text of the printing.
+            <div className="card-title">Acknowledged</div>
+            <div className="card-description-back">
+              <ul className="acknowledged-list">
+                <li>Kavya Shree</li>
+                <li>Kavya Shree</li>
+                <li>Kavya Shree</li>
+                <li>Kavya Shree</li>
+                <li>Kavya Shree</li>
+                <li>Kavya Shree</li>
+                <li>Kavya Shree</li>
+                <li>Kavya Shree</li>
+              </ul>
             </div>
           </BackSide>
         </Flippy>

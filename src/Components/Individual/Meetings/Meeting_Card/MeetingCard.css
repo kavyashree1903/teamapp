@@ -30,6 +30,7 @@
   font-weight: normal;
   font-size: 1.931vh;
   color: #000000;
+  text-decoration: none;
 }
 
 .icons-meeting {
@@ -64,4 +65,12 @@
 .reject-icon{
   height: 3vh;
   width: 3vh;
+}
+.acknowledged-list{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  display: contents;
+  font-weight: normal;
+  font-size: 1.931vh;
 }
