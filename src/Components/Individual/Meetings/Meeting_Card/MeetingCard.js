@@ -51,6 +51,10 @@ class MeetingCard extends Component {
                 <li>Kavya Shree</li>
                 <li>Kavya Shree</li>
               </ul>
+              <div className="scroll-arrows">
+              <img className="up-arrow" src="https://ik.imagekit.io/m52sq26n4h/iconmonstr-angel-down-thin.svg"/>
+              <img className="down-arrow"src="https://ik.imagekit.io/m52sq26n4h/iconmonstr-angel-up-thin.svg"/>
+              </div>
             </div>
           </BackSide>
         </Flippy>
