@@ -4,6 +4,8 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	background: #047082;
+	z-index: 0;
+	position: relative;
 }
 .container-side-menu-left{
 	position: fixed;
