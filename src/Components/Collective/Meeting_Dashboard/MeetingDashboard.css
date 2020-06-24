@@ -5,15 +5,15 @@
     border-radius: 6vh;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
     flex-wrap: nowrap;
 }
 .meet-cards {
     padding: 5vh;
-    padding-left: 8vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
