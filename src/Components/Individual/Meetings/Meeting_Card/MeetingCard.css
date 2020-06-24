@@ -1,89 +1,89 @@
 .card-title {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.575vh;
-  color: #000000;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.575vh;
+	color: #000000;
 }
 
 .card-date {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.931vh;
-  color: #000000;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.931vh;
+	color: #000000;
 }
 .card-container {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
 }
 .card-venue {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.931vh;
-  color: #000000;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.931vh;
+	color: #000000;
 }
 .card-description {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.931vh;
-  color: #000000;
-  text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.931vh;
+	color: #000000;
+	text-decoration: none;
 }
 
 .icons-meeting {
-  cursor: pointer;
+	cursor: pointer;
 }
 .flippy-container * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 .card-content {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 .frontcard {
-  width: 22vh;
-  height: 23vh;
-  background: #c4c4c4;
-  box-shadow: -4px -4px -4px #ffffff, 4px 4px 4px #000000;
-  border-radius: 3vh;
-  text-align: center;
+	width: 22vh;
+	height: 23vh;
+	background: #c4c4c4;
+	box-shadow: -4px -4px -4px #ffffff, 4px 4px 4px #000000;
+	border-radius: 3vh;
+	text-align: center;
 }
 .backcard{
-  width: 22vh;
-  height: 23vh;
-  background: #c4c4c4;
-  box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 3vh;
-  text-align: center;
+	width: 22vh;
+	height: 23vh;
+	background: #c4c4c4;
+	box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.5);
+	border-radius: 3vh;
+	text-align: center;
 }
 .accept-icon{
-  height: 3vh;
-  width: 3vh;
-  cursor: pointer;
+	height: 3vh;
+	width: 3vh;
+	cursor: pointer;
 }
 .reject-icon{
-  height: 3vh;
-  width: 3vh;
-  cursor: pointer;
+	height: 3vh;
+	width: 3vh;
+	cursor: pointer;
 }
 .acknowledged-list{
-  text-decoration: none;
-  list-style-type: none;
-  text-align: center;
-  display: contents;
-  font-weight: normal;
-  font-size: 1.931vh;
-  overflow-y: scroll;
+	text-decoration: none;
+	list-style-type: none;
+	text-align: center;
+	display: contents;
+	font-weight: normal;
+	font-size: 1.931vh;
+	overflow-y: scroll;
 }
 .up-arrow{
-  height:3vh;
-  width:3vh;
-  cursor: pointer;
+	height:3vh;
+	width:3vh;
+	cursor: pointer;
 }
 .down-arrow{
-  height:3vh;
-  width:3vh;
-  cursor: pointer;
+	height:3vh;
+	width:3vh;
+	cursor: pointer;
 }
