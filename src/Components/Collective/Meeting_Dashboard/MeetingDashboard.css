@@ -11,7 +11,7 @@
 }
 .meet-cards {
     padding: 5vh;
-    padding-left: 6vh;
+    padding-left: 8vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
