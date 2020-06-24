@@ -3,11 +3,17 @@
     height: 70.8vh;
     background-color: #ffffff;
     border-radius: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 }
 .meet-cards {
     padding: 5vh;
+    padding-left: 6vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
