@@ -61,10 +61,12 @@
 .accept-icon{
   height: 3vh;
   width: 3vh;
+  cursor: pointer;
 }
 .reject-icon{
   height: 3vh;
   width: 3vh;
+  cursor: pointer;
 }
 .acknowledged-list{
   text-decoration: none;
@@ -73,12 +75,15 @@
   display: contents;
   font-weight: normal;
   font-size: 1.931vh;
+  overflow-y: scroll;
 }
 .up-arrow{
   height:3vh;
   width:3vh;
+  cursor: pointer;
 }
 .down-arrow{
   height:3vh;
   width:3vh;
+  cursor: pointer;
 }
