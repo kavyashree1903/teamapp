@@ -10,10 +10,15 @@
 }
 .meet-cards {
     padding: 5vh;
-    padding-left: 5vw;
+    padding-left: 7vw;
     padding-right: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.meet-dashboard::after{
+  height: 0;
+  width: 10vw;
+  content: "";
 }
