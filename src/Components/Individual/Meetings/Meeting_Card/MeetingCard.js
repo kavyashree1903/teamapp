@@ -39,13 +39,9 @@ class MeetingCard extends Component {
           </FrontSide>
 
           <BackSide className="backcard">
-            <div className="card-title">Acknowledged</div>
+            <div className="card-title">RSVP</div>
             <div className="card-description-back">
               <ul className="acknowledged-list">
-                <li>Kavya Shree</li>
-                <li>Kavya Shree</li>
-                <li>Kavya Shree</li>
-                <li>Kavya Shree</li>
                 <li>Kavya Shree</li>
                 <li>Kavya Shree</li>
                 <li>Kavya Shree</li>
@@ -59,6 +55,10 @@ class MeetingCard extends Component {
                 <img
                   className="down-arrow"
                   src="https://ik.imagekit.io/m52sq26n4h/iconmonstr-angel-up-thin.svg"
+                />
+                <img
+                  className="flip-symbol"
+                  src="https://ik.imagekit.io/m52sq26n4h/rotate_left-black-18dp.svg"
                 />
               </div>
             </div>

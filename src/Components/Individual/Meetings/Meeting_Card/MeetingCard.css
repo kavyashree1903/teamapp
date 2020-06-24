@@ -16,6 +16,7 @@
 .card-container {
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
+	justify-content: center;
 }
 .card-venue {
 	font-family: "Montserrat", sans-serif;
@@ -40,7 +41,7 @@
 	box-sizing: border-box;
 }
 .card-content {
-	margin-bottom: 15px;
+	margin-bottom: 2vh;
 }
 .frontcard {
 	width: 22vh;
@@ -59,14 +60,16 @@
 	text-align: center;
 }
 .accept-icon{
-	height: 3vh;
-	width: 3vh;
+	height: 2.5vh;
+	width: 2.5vh;
 	cursor: pointer;
+	float: right;
 }
 .reject-icon{
-	height: 3vh;
-	width: 3vh;
+	height: 2.5vh;
+	width: 2.5vh;
 	cursor: pointer;
+	float: left;
 }
 .acknowledged-list{
 	text-decoration: none;
@@ -78,12 +81,15 @@
 	overflow-y: scroll;
 }
 .up-arrow{
-	height:3vh;
-	width:3vh;
+	height:1vh;
+	width:1vh;
 	cursor: pointer;
 }
 .down-arrow{
-	height:3vh;
-	width:3vh;
+	height:1vh;
+	width:1vh;
 	cursor: pointer;
+}
+div.scroll-arrows{
+	right: 0px;
 }

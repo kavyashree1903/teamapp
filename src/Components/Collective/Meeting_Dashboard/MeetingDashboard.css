@@ -1,14 +1,13 @@
 .meet-dashboard {
     width: 70.54vw;
     height: 70.8vh;
-    /*left: 22.21vh;*/
-    /*top: 19.95vh;*/
     background-color: #ffffff;
     border-radius: 6vh;
 }
 .meet-cards {
-    padding: 30px;
+    padding: 5vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
