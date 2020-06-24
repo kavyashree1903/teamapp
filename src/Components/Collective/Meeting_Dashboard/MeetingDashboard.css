@@ -5,20 +5,22 @@
     border-radius: 6vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: nowrap;
 }
 .meet-cards {
     padding: 5vh;
-    padding-left: 7vw;
-    padding-right: 5vw;
+/*    padding-left: 8vw;
+    padding-right: 5vw;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.meet-dashboard::after{
+.pseudo{
   height: 0;
-  width: 10vw;
+  width: 22vh;
+  margin: 3vh;
+  margin-top: 3vh;
   content: "";
 }
