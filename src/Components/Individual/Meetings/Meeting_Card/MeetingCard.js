@@ -6,8 +6,8 @@ class MeetingCard extends Component {
     return (
       <div className="card-content">
         <Flippy
-          flipOnHover={false} // default false
-          flipOnClick={true} // default false
+          flipOnHover={true} // default false
+          flipOnClick={false} // default false
           flipDirection="horizontal" // horizontal or vertical
           ref={(r) => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
           // if you pass isFlipped prop component will be controlled component.
@@ -55,10 +55,6 @@ class MeetingCard extends Component {
                 <img
                   className="down-arrow"
                   src="https://ik.imagekit.io/m52sq26n4h/iconmonstr-angel-up-thin.svg"
-                />
-                <img
-                  className="flip-symbol"
-                  src="https://ik.imagekit.io/m52sq26n4h/rotate_left-black-18dp.svg"
                 />
               </div>
             </div>
