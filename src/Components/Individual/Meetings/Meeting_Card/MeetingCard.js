@@ -41,17 +41,13 @@ class MeetingCard extends Component {
                 </ul>
               </div>
               <div className="icons-meeting">
-                <span>
-                  <img
+                  <span
                     className="accept-icon"
-                    src="https://ik.imagekit.io/m52sq26n4h/clear-24px.svg"
-                  />
+                  >
                 </span>
-                <span>
-                  <img
+                  <span
                     className="reject-icon"
-                    src="https://ik.imagekit.io/m52sq26n4h/done-24px.svg"
-                  />
+                  >
                 </span>
               </div>
             </div>
