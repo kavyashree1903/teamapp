@@ -100,7 +100,7 @@ div.scroll-arrows{
 }
 .card-content{
 	margin: 3vh;
-	padding-bottom: 3vh;
+	padding-bottom: 1vh;
 }
 .frontcard, .backcard{
 	display: flex;
@@ -112,7 +112,7 @@ div.scroll-arrows{
 .acknowledged-list-container{
 	padding: 1.3vh;
 	margin: 0.5vh;
-	border: 0.5px solid black;
+	/*border: 0.5px solid black;*/
 	height: 15vh;
 	overflow: auto;
 }
