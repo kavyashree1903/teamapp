@@ -21,6 +21,25 @@ class MeetingCard extends Component {
               <div className="card-description">
                 Lorem Ipsum is simply dummy text of the printing.
               </div>
+            </div>
+          </FrontSide>
+
+          <BackSide className="backcard">
+            <div className="card-title">RSVP</div>
+            <div className="card-description-back">
+              <div className="acknowledged-list-container">
+                <ul className="acknowledged-list">
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                </ul>
+              </div>
               <div className="icons-meeting">
                 <span>
                   <img
@@ -34,28 +53,6 @@ class MeetingCard extends Component {
                     src="https://ik.imagekit.io/m52sq26n4h/done-24px.svg"
                   />
                 </span>
-              </div>
-            </div>
-          </FrontSide>
-
-          <BackSide className="backcard">
-            <div className="card-title">RSVP</div>
-            <div className="card-description-back">
-              <ul className="acknowledged-list">
-                <li>Kavya Shree</li>
-                <li>Kavya Shree</li>
-                <li>Kavya Shree</li>
-                <li>Kavya Shree</li>
-              </ul>
-              <div className="scroll-arrows">
-                <img
-                  className="up-arrow"
-                  src="https://ik.imagekit.io/m52sq26n4h/iconmonstr-angel-down-thin.svg"
-                />
-                <img
-                  className="down-arrow"
-                  src="https://ik.imagekit.io/m52sq26n4h/iconmonstr-angel-up-thin.svg"
-                />
               </div>
             </div>
           </BackSide>
