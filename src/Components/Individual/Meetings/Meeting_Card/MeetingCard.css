@@ -109,3 +109,8 @@ div.scroll-arrows{
 	align-items: center;
 
 }
+.acknowledged-list-container{
+	padding: 1.3vh;
+	margin: 0.5vh;
+	border: 0.5px solid black;
+}

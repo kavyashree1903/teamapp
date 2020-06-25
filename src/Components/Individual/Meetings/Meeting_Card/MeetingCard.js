@@ -41,12 +41,14 @@ class MeetingCard extends Component {
           <BackSide className="backcard">
             <div className="card-title">RSVP</div>
             <div className="card-description-back">
-              <ul className="acknowledged-list">
-                <li>Kavya Shree</li>
-                <li>Kavya Shree</li>
-                <li>Kavya Shree</li>
-                <li>Kavya Shree</li>
-              </ul>
+              <div className="acknowledged-list-container">
+                <ul className="acknowledged-list">
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                </ul>
+              </div>
               <div className="scroll-arrows">
                 <img
                   className="up-arrow"
