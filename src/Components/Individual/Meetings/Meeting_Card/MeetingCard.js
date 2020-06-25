@@ -47,6 +47,11 @@ class MeetingCard extends Component {
                   <li>Kavya Shree</li>
                   <li>Kavya Shree</li>
                   <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
+                  <li>Kavya Shree</li>
                 </ul>
               </div>
               <div className="scroll-arrows">

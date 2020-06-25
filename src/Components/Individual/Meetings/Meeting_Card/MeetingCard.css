@@ -113,4 +113,6 @@ div.scroll-arrows{
 	padding: 1.3vh;
 	margin: 0.5vh;
 	border: 0.5px solid black;
+	height: 15vh;
+	overflow: auto;
 }
