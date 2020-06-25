@@ -46,19 +46,20 @@
 	margin-bottom: 2vh;
 }
 .frontcard {
-	width: 22vh;
-	height: 23vh;
+	width: 24vh;
+	height: 25vh;
 	background: #c4c4c4;
-	box-shadow: -4px -4px -4px #ffffff, 4px 4px 4px #000000;
 	border-radius: 3vh;
+	font-size: 2.5vh;
 	text-align: center;
 }
 .backcard{
-	width: 22vh;
-	height: 23vh;
+	width: 24vh;
+	height: 25vh;
 	background: #c4c4c4;
 	box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.5);
 	border-radius: 3vh;
+	font-size: 2.5vh;
 	text-align: center;
 }
 .accept-icon{
@@ -100,4 +101,11 @@ div.scroll-arrows{
 .card-content{
 	margin: 3vh;
 	margin-top: 3vh;
+}
+.frontcard, .backcard{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 }
