@@ -7,11 +7,10 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: nowrap;
+    overflow: auto;
 }
 .meet-cards {
     padding: 5vh;
-/*    padding-left: 8vw;
-    padding-right: 5vw;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,4 +22,8 @@
   margin: 3vh;
   margin-top: 3vh;
   content: "";
+}
+.outer-container-meeting-card{
+  border-radius: 6vh;  
+  overflow: hidden;
 }

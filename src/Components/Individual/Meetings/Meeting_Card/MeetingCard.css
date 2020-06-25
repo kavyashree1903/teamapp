@@ -100,7 +100,7 @@ div.scroll-arrows{
 }
 .card-content{
 	margin: 3vh;
-	margin-top: 3vh;
+	padding-bottom: 3vh;
 }
 .frontcard, .backcard{
 	display: flex;
