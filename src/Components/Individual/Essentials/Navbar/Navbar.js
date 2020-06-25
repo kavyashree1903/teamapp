@@ -46,8 +46,25 @@ class Navbar extends Component{
 			}
 		]//will be changed depending on which menu is clicked
 	}
+	setEventListener(){
+		document.querySelector('.container-app').addEventListener('click', () => {
+			if(!(this.state.left && this.state.right)){
+				sideMenuClassesLeft = "container-side-menu-left hide-left"
+				sideMenuClassesRight = "container-side-menu-right hide-right"
+				document.querySelector('.container-app').classList.remove('blur-background')
+				document.querySelector('.container-app').classList.add('sharp-background')
+				this.setState(
+					{
+						right: false,
+						left: false
+					}
+				)//close right sidebar and update classes
+			}
+		})
+	}
+	
 	leftSideMenuClick(currentState){
-		if(currentState.left === true && currentState.right === false){//if left sidebar is open
+		if(currentState.left && !currentState.right){//if left sidebar is open
 			this.setState(
 				{
 					right: false,
@@ -70,12 +87,11 @@ class Navbar extends Component{
 			sideMenuClassesRight = "container-side-menu-right hide-right"
 			document.querySelector('.container-app').classList.remove('sharp-background')
 			document.querySelector('.container-app').classList.add('blur-background')
-			//add code to change buttons
+			this.setEventListener()
 		}
-		
 	}
 	rightSideMenuClick(currentState){
-		if(currentState.left === false && currentState.right === true){//if right sidebar is open
+		if(!currentState.left && currentState.right){//if right sidebar is open
 			this.setState(
 				{
 					right: false,
@@ -98,9 +114,9 @@ class Navbar extends Component{
 			sideMenuClassesRight = "container-side-menu-right show-right"
 			document.querySelector('.container-app').classList.add('blur-background')
 			document.querySelector('.container-app').classList.remove('sharp-background')
+			this.setEventListener()
 			//add code to change buttons
 		}
-		
 	}
 	render() {
 		return (
