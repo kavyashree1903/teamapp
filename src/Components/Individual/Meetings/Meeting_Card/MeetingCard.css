@@ -63,16 +63,32 @@
 	text-align: center;
 }
 .accept-icon{
-	height: 2.5vh;
-	width: 2.5vh;
+	height: 4.0vh;
+	width: 4.0vh;
 	cursor: pointer;
 	float: right;
+	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-checkmark-24__2_.png');
+	background-repeat: no-repeat;
+
+}
+.accept-icon:hover{
+	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-checkmark-24__3_.png');
+	background-repeat: no-repeat;
+
 }
 .reject-icon{
-	height: 2.5vh;
-	width: 2.5vh;
+	height: 4.0vh;
+	width: 4.0vh;
 	cursor: pointer;
 	float: left;
+	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-delete-24.png');
+	background-repeat: no-repeat;
+
+}
+.reject-icon:hover{
+	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-delete-24__1_.png');
+	background-repeat: no-repeat;
+
 }
 .acknowledged-list{
 	text-decoration: none;
