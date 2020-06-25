@@ -108,9 +108,9 @@ class Navbar extends Component{
 				<div>
 					<div id="nav">
 						 <div className="container-navbar">
-						 <img className="left-hamburger" src="https://ik.imagekit.io/m52sq26n4h/menu-white-18dp.svg" onClick = {() => this.leftSideMenuClick(this.state)}/>
+							 <span className="left-hamburger"  onClick = {() => this.leftSideMenuClick(this.state)}></span>
 						 <span><a className="app-title" href="#">WORC</a></span>
-						 <img className="right-hamburger" src="https://ik.imagekit.io/m52sq26n4h/menu-white-18dp.svg" onClick = {() => this.rightSideMenuClick(this.state)}/>
+							 <span className="right-hamburger"  onClick = {() => this.rightSideMenuClick(this.state)}></span>
 						 </div>
 					</div>
 				</div>
