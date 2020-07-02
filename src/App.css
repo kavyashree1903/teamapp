@@ -20,7 +20,7 @@ body {
   z-index: -1;
 }
 
-.meeting-dashboard{
+.current-dashboard{
   width: 71vw;
   height: 71vh;
   padding-left: 14.5vw;
