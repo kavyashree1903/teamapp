@@ -34,9 +34,10 @@
 	border: none;
 	font-size: 0vh;
 	background: transparent;
-	width: 6vh;
+	height:5vh;
+	width: 5vh;
 	margin: 1vh 2vh;
-	margin-top: 0.001vh;
+	margin-top: 0.3vh;
 	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-menu-50__2_.png');
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -53,9 +54,11 @@
 	padding: 0vh;
 	border: none;
 	font-size: 0vh;
-	width: 6vh;
+	width: 5vh;
+	height:5vh;
+
 	margin: 1vh 2vh;
-	margin-top: 0.001vh;
+	margin-top: 0.3vh;
 	cursor: pointer;
 	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-menu-50__2_.png');
 	background-repeat: no-repeat;
