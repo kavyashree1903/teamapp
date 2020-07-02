@@ -63,10 +63,12 @@
 	text-align: center;
 }
 .accept-icon{
-	height: 4.0vh;
-	width: 4.0vh;
+	height: 2.0vh;
+	width: 2.0vh;
+	background-size: 2vh 2vh;
 	cursor: pointer;
 	float: right;
+	right: 0;
 	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-checkmark-24__2_.png');
 	background-repeat: no-repeat;
 
@@ -77,10 +79,12 @@
 
 }
 .reject-icon{
-	height: 4.0vh;
-	width: 4.0vh;
+	height: 2.0vh;
+	width: 2.0vh;
+	background-size: 2vh 2vh;
 	cursor: pointer;
 	float: left;
+	left: 0;
 	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-delete-24.png');
 	background-repeat: no-repeat;
 
