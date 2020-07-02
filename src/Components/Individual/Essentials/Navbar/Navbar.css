@@ -41,6 +41,7 @@
 	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-menu-50__2_.png');
 	background-repeat: no-repeat;
 	cursor: pointer;
+	background-size: 5vh 5vh;
 }
 .left-hamburger:hover{
 	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-menu-50__1_.png');
@@ -56,12 +57,12 @@
 	font-size: 0vh;
 	width: 5vh;
 	height:5vh;
-
 	margin: 1vh 2vh;
 	margin-top: 0.3vh;
 	cursor: pointer;
 	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-menu-50__2_.png');
 	background-repeat: no-repeat;
+	background-size: 5vh 5vh;
 }
 .right-hamburger:hover{
 	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-menu-50__1_.png');
