@@ -65,6 +65,24 @@ div.right-dashboard{
 
 }
 
+.background-for-dashboard {
+    width: 71vw;
+    height: 71vh;
+    background-color: #ffffff;
+    border-radius: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.outer-container-dashboard{
+  border-radius: 6vh;  
+  overflow: hidden;
+  width: 71vw;
+}
+
 .roll-to-current-from-right{
 
 }
