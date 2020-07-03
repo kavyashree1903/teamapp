@@ -2,9 +2,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./Components/Individual/Essentials/Navbar/Navbar.js";
+import TaskDashboard from "./Components/Collective/Task_Dashboard/task_dashboard";
 import MeetingDashboard from "./Components/Collective/Meeting_Dashboard/MeetingDashboard";
-import TaskDashboard from "./Components/Collective/Meeting_Dashboard/MeetingDashboard";
-import CalendarDashboard from "./Components/Collective/Meeting_Dashboard/MeetingDashboard";
+import CalendarDashboard from "./Components/Collective/Calendar_Dashboard/calendar_dashboard";
 
 class App extends Component {
   constructor() {
@@ -50,9 +50,6 @@ class App extends Component {
       leftView: this.views[newLeftView - 1].id, //-1 to account for the array indices starting from 0
       rightView: currentState.currentView
     }
-    document.querySelector('.left-dashboard').classList.add('roll-to-current-from-left')    
-    document.querySelector('.current-dashboard').classList.add('roll-to-right-from-current')    
-    document.querySelector('.right-dashboard').classList.add('roll-to-left-from-right')    
     this.setState(newState)
   }
 
@@ -68,23 +65,21 @@ class App extends Component {
       rightView: this.views[newRightView - 1].id, //-1 to account for the array indices starting from 0
       leftView: currentState.currentView
     }
-    document.querySelector('.right-dashboard').classList.add('roll-to-current-from-right')    
-    document.querySelector('.current-dashboard').classList.add('roll-to-left-from-current')    
-    document.querySelector('.left-dashboard').classList.add('roll-to-right-from-left')
     this.setState(newState)
     
   }
 
 
   render() {
+    console.log("cano")
     return (
       <React.Fragment>
         <Navbar />
         <div className="container-app">
           <div className="container-app-dashboard">
-            <div onClick= {() => this.showLeftView(this.state)} className="left-dashboard">{this.views[this.state.leftView - 1].view}</div>
+            <div className="left-dashboard" onClick= {() => this.showLeftView(this.state)}>{this.views[this.state.leftView - 1].view}</div>
             <div className="current-dashboard">{this.views[this.state.currentView - 1].view}</div>
-            <div onClick= {() => this.showRightView(this.state)} className="right-dashboard">{this.views[this.state.rightView - 1].view}</div>
+            <div className="right-dashboard" onClick= {() => this.showRightView(this.state)}>{this.views[this.state.rightView - 1].view}</div>
           </div>
         </div>
       </React.Fragment>

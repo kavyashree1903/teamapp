@@ -6,6 +6,7 @@ body {
 .blur-background{
 	transition: 0.2s;
 	filter: blur(20px);
+  pointer-events: none;
 }
 
 .sharp-background{
@@ -30,6 +31,7 @@ body {
 }
 
 div.left-dashboard{
+  transition: 0.2s;
   height: 71vh;
   width: 71vw;
   overflow: hidden;
@@ -41,6 +43,7 @@ div.left-dashboard{
 }
 
 .current-dashboard{
+  transition: 0.2s;
   width: 71vw;
   height: 71vh;
   padding-bottom: 11.5vh;
@@ -48,6 +51,7 @@ div.left-dashboard{
 }
 
 div.right-dashboard{
+  transition: 0.2s;
   height: 71vh;
   width: 71vw;
   overflow: hidden;
