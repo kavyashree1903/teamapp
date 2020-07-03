@@ -1,0 +1,14 @@
+.task-columns {
+  padding: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pseudo {
+  height: 0;
+  width: 22vh;
+  margin: 3vh;
+  margin-top: 3vh;
+  content: "";
+}

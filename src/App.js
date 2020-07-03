@@ -1,10 +1,9 @@
-
 import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./Components/Individual/Essentials/Navbar/Navbar.js";
-import TaskDashboard from "./Components/Collective/Task_Dashboard/task_dashboard";
 import MeetingDashboard from "./Components/Collective/Meeting_Dashboard/MeetingDashboard";
 import CalendarDashboard from "./Components/Collective/Calendar_Dashboard/calendar_dashboard";
+import TaskDashboard from "./Components/Collective/Task_Dashboard/TaskDashboard";
 
 class App extends Component {
   constructor() {

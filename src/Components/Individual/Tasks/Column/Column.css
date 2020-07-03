@@ -1,0 +1,28 @@
+.task-column{
+    width: 24.26vh;
+    height: 52.01vh;
+    left: 31.39vh;
+    top: 25.68vh;
+    background: #C4C4C4;
+    border-radius: 1.93vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 3vh;
+    padding-bottom: 1vh;
+
+}
+.column-status{
+    width: 149px;
+    height: 39px;
+    left: 738px;
+    top: 282px;
+    background: #FFFFFF;
+    box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 19px;
+}
+
+.column-heading{
+    text-align: center;
+}
