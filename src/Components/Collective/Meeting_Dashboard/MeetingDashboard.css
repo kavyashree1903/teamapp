@@ -1,14 +1,4 @@
-.meet-dashboard {
-    width: 71vw;
-    height: 71vh;
-    background-color: #ffffff;
-    border-radius: 6vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    overflow: auto;
-}
+
 .meet-cards {
     padding: 5vh;
     display: flex;
@@ -23,7 +13,4 @@
   margin-top: 3vh;
   content: "";
 }
-.outer-container-meeting-card{
-  border-radius: 6vh;  
-  overflow: hidden;
-}
+

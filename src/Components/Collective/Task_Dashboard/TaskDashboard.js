@@ -4,8 +4,8 @@ import "./TaskDashboard.css";
 class TaskDashboard extends Component {
   render() {
     return (
-      <div className="outer-container">
-        <div className="task-dashboard">
+      <div className="outer-container-dashboard">
+        <div className="background-for-dashboard">
           <div className="task-columns">
             <Column heading="Alloted" />
             <Column heading="In Progress" />
