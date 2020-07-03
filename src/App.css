@@ -3,14 +3,14 @@ body {
   margin-top: 6vh;
 }
 
-.blur-background{
-	transition: 0.2s;
-	filter: blur(20px);
+.blur-background {
+  transition: 0.2s;
+  filter: blur(20px);
 }
 
-.sharp-background{
-	transition: 0.2s;
-	filter: blur(0px);
+.sharp-background {
+  transition: 0.2s;
+  filter: blur(0px);
 }
 
 .container-app {
@@ -20,7 +20,7 @@ body {
   z-index: -1;
 }
 
-.meeting-dashboard{
+.meeting-dashboard {
   width: 71vw;
   height: 71vh;
   padding-left: 14.5vw;
@@ -29,5 +29,4 @@ body {
   padding-bottom: 11.5vh;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");

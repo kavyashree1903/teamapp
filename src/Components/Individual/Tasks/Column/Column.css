@@ -1,5 +1,4 @@
 .task-column{
-    position: fixed;
     width: 24.26vh;
     height: 52.01vh;
     left: 31.39vh;
@@ -7,9 +6,12 @@
     background: #C4C4C4;
     border-radius: 1.93vh;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-justify-content: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 3vh;
+    padding-bottom: 1vh;
+
 }
 .heading{
     width: 149px;

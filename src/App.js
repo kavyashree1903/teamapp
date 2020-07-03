@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./Components/Individual/Essentials/Navbar/Navbar.js";
@@ -18,10 +17,9 @@ class App extends Component {
         />
         <div className="container-app">
           <div className="meeting-dashboard">
-              <div className="dashboard">
-                <TaskDashboard/>
-              </div>
-
+            <div className="dashboard">
+              <TaskDashboard />
+            </div>
           </div>
         </div>
       </React.Fragment>
