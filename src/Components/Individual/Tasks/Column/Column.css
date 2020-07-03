@@ -1,7 +1,7 @@
 .task-column{
     width: 15vw;
     background: #C4C4C4;
-    border-radius: 2vh;
+    border-radius: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
