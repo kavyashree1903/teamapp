@@ -78,9 +78,9 @@ class App extends Component {
         <Navbar />
         <div className="container-app">
           <div className="container-app-dashboard">
-            <div className="left-dashboard" onClick= {() => this.showLeftView(this.state)}>{this.views[this.state.leftView - 1].view}</div>
+            <div className="left-dashboard" onClick= {() => this.showLeftView(this.state)}></div>
             <div className="current-dashboard">{this.views[this.state.currentView - 1].view}</div>
-            <div className="right-dashboard" onClick= {() => this.showRightView(this.state)}>{this.views[this.state.rightView - 1].view}</div>
+            <div className="right-dashboard" onClick= {() => this.showRightView(this.state)}></div>
           </div>
         </div>
       </React.Fragment>
