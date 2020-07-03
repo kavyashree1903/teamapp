@@ -7,7 +7,7 @@ class TaskDashboard extends Component {
       <div className="outer-container-dashboard">
         <div className="background-for-dashboard">
           <div className="task-board">
-            <Column heading="Alloted" />
+            <Column heading="Allotted" />
             <Column heading="In Progress" />
             <Column heading="In Review" />
             <Column heading="Completed" />
