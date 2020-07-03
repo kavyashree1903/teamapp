@@ -1,0 +1,28 @@
+.task-dashboard {
+    width: 71vw;
+    height: 71vh;
+    background-color: #ffffff;
+    border-radius: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+.tasks-column {
+    display: inline-list-item;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pseudo{
+    height: 0;
+    width: 22vh;
+    margin: 3vh;
+    margin-top: 3vh;
+    content: "";
+}
+.outer-container{
+    border-radius: 6vh;
+    overflow: hidden;
+}

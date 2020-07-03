@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./Components/Individual/Essentials/Navbar/Navbar.js";
-import MeetingDashboard from "./Components/Collective/Meeting_Dashboard/MeetingDashboard";
+import TaskDashboard from "./Components/Collective/Task_Dashboard/TaskDashboard";
 
 class App extends Component {
   constructor() {
@@ -18,7 +18,10 @@ class App extends Component {
         />
         <div className="container-app">
           <div className="meeting-dashboard">
-              <div className="dashboard">  <MeetingDashboard /></div>
+              <div className="dashboard">
+                <TaskDashboard/>
+              </div>
+
           </div>
         </div>
       </React.Fragment>
