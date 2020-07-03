@@ -5,7 +5,7 @@ class Column extends Component {
     return (
       <div className="task-column">
         <div className="column-heading">
-          <h2 className="column-status">{this.props.heading}</h2>
+          <p className="column-status">{this.props.heading}</p>
         </div>
       </div>
     );

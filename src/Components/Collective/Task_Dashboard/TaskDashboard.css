@@ -1,14 +1,8 @@
-.task-columns {
+.task-board {
   padding: 5vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-.pseudo {
-  height: 0;
-  width: 22vh;
-  margin: 3vh;
-  margin-top: 3vh;
-  content: "";
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+

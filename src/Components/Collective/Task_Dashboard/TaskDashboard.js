@@ -6,15 +6,11 @@ class TaskDashboard extends Component {
     return (
       <div className="outer-container-dashboard">
         <div className="background-for-dashboard">
-          <div className="task-columns">
+          <div className="task-board">
             <Column heading="Alloted" />
             <Column heading="In Progress" />
             <Column heading="In Review" />
             <Column heading="Completed" />
-            <div className="pseudo" />
-            <div className="pseudo" />
-            <div className="pseudo" />
-            <div className="pseudo" />
           </div>
         </div>
       </div>
