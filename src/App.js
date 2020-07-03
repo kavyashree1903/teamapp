@@ -37,7 +37,12 @@ class App extends Component {
       }
     ]    
   }
-
+  /*
+    To add another view:
+    1. Change this.numberOfViews
+    2. Change the "right" key of the last element in this.views to the next number
+    3. Add the new view object to this.views with the appropriate keys
+  */
   showLeftView(currentState){
     var newLeftView
     if(currentState.leftView === 1) 
