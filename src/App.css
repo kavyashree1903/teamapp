@@ -25,17 +25,19 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 9.5vh;
-  width: 100vw;
+  max-width: 100vw;
   height: 71vh;
 }
 
 div.left-dashboard{
   height: 71vh;
-  width: 8vw;
+  width: 71vw;
+  overflow: hidden;
   background-color: white;
   border-radius: 0px 6vh 6vh 0px;
   margin-right: 6vw;
   float: left;
+  left: -63vw;
 }
 
 .current-dashboard{
@@ -45,16 +47,36 @@ div.left-dashboard{
   display: inline;
 }
 
-
 div.right-dashboard{
   height: 71vh;
-  width: 8vw;
+  width: 71vw;
+  overflow: hidden;
   background-color: white;
   border-radius: 6vh 0px 0px 6vh;
   float: right;
   margin-left: 6vw;
   top: 0;  
   display: inline;
+  right: -63vw;
+
+}
+
+.roll-to-current-from-right{
+
+}
+.roll-to-left-from-current{
+
+}
+.roll-to-right-from-left{
+
+}
+.roll-to-current-from-left{
+
+}
+.roll-to-right-from-current{
+
+}
+.roll-to-left-from-right{
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
