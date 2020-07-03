@@ -42,7 +42,7 @@ div.left-dashboard{
   left: -63vw;
 }
 
-.current-dashboard{
+div.current-dashboard{
   transition: 0.2s;
   width: 71vw;
   height: 71vh;

@@ -66,12 +66,9 @@ class App extends Component {
       leftView: currentState.currentView
     }
     this.setState(newState)
-    
   }
 
-
   render() {
-    console.log("cano")
     return (
       <React.Fragment>
         <Navbar />
