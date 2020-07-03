@@ -20,13 +20,42 @@ body {
   z-index: -1;
 }
 
+.container-app-dashboard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 9.5vh;
+  width: 100vw;
+  height: 71vh;
+}
+
+div.left-dashboard{
+  height: 71vh;
+  width: 8vw;
+  background-color: white;
+  border-radius: 0px 6vh 6vh 0px;
+  margin-right: 6vw;
+  float: left;
+}
+
 .current-dashboard{
   width: 71vw;
   height: 71vh;
-  padding-left: 14.5vw;
-  padding-right: 14.5vw;
-  padding-top: 10.5vh;
   padding-bottom: 11.5vh;
+  display: inline;
+}
+
+
+div.right-dashboard{
+  height: 71vh;
+  width: 8vw;
+  background-color: white;
+  border-radius: 6vh 0px 0px 6vh;
+  float: right;
+  margin-left: 6vw;
+  top: 0;  
+  display: inline;
+
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 

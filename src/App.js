@@ -9,9 +9,12 @@ import CalendarDashboard from "./Components/Collective/Meeting_Dashboard/Meeting
 class App extends Component {
   constructor() {
     super();
+    this.dashboardInView = <MeetingDashboard />
   }
 
   render() {
+
+    this.dashboardInView = <MeetingDashboard />
     return (
       <React.Fragment>
         <Navbar
@@ -19,9 +22,11 @@ class App extends Component {
           hamburger-right={this.toggleRightSideMenu}
         />
         <div className="container-app">
-          <div className="current-dashboard"><MeetingDashboard /></div>
-          <div className="left-dashboard"><TaskDashboard /></div>
-          <div className="right-dashboard"><CalendarDashboard /></div>
+          <div className="container-app-dashboard">
+            <div className="left-dashboard"></div>
+            <div className="current-dashboard">{this.dashboardInView}</div>
+            <div className="right-dashboard"></div>
+          </div>
         </div>
       </React.Fragment>
     );

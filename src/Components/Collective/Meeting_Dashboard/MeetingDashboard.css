@@ -26,4 +26,5 @@
 .outer-container-meeting-card{
   border-radius: 6vh;  
   overflow: hidden;
+  width: 71vw;
 }
