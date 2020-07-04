@@ -6,7 +6,6 @@ body {
 .blur-background{
 	transition: 0.2s;
 	filter: blur(20px);
-  pointer-events: none;
 }
 
 .sharp-background {
@@ -30,7 +29,7 @@ body {
   height: 71vh;
 }
 
-div.left-dashboard{
+.left-dashboard{
   transition: 0.2s;
   height: 71vh;
   width: 71vw;
@@ -42,15 +41,14 @@ div.left-dashboard{
   left: -63vw;
 }
 
-div.current-dashboard{
+.current-dashboard{
   transition: 0.2s;
   width: 71vw;
   height: 71vh;
-  padding-bottom: 11.5vh;
   display: inline;
 }
 
-div.right-dashboard{
+.right-dashboard{
   transition: 0.2s;
   height: 71vh;
   width: 71vw;
@@ -74,31 +72,34 @@ div.right-dashboard{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: nowrap;
-    overflow: auto;
 }
-
 .outer-container-dashboard{
   border-radius: 6vh;  
   overflow: hidden;
   width: 71vw;
 }
 
-.roll-to-current-from-right{
-
+.slide-status{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.roll-to-left-from-current{
 
+.slide-pagination{
+  height: 1vh;
+  width: 1vh;
+  background-color: white;
+  border-radius: 50%;
+  margin: 1vw;
+  margin-top: 2vh;
+  transition: 0.2s;
 }
-.roll-to-right-from-left{
+.current-slide{
+  transition: 0.2s;
+  height: 1vh;
+  width: 2vw;
+  border-radius: 2vh;
+  background-color: #C4C4C4;
+}
 
-}
-.roll-to-current-from-left{
-
-}
-.roll-to-right-from-current{
-
-}
-.roll-to-left-from-right{
-
-}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");

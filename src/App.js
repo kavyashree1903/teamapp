@@ -54,6 +54,7 @@ class App extends Component {
       leftView: this.views[newLeftView - 1].id, //-1 to account for the array indices starting from 0
       rightView: currentState.currentView
     }
+    this.updatePagination(newState.currentView)
     this.setState(newState)
   }
 
@@ -69,10 +70,19 @@ class App extends Component {
       rightView: this.views[newRightView - 1].id, //-1 to account for the array indices starting from 0
       leftView: currentState.currentView
     }
+    this.updatePagination(newState.currentView)
     this.setState(newState)
+  }
+  updatePagination(currentSlideSelector){
+    var indicators = document.querySelectorAll('.slide-pagination')
+    indicators.forEach(item => {
+      item.classList.remove('current-slide')
+    })
+    indicators[currentSlideSelector - 1].classList.add('current-slide')
   }
 
   render() {
+    
     return (
       <React.Fragment>
         <Navbar />
@@ -81,6 +91,11 @@ class App extends Component {
             <div className="left-dashboard" onClick= {() => this.showLeftView(this.state)}></div>
             <div className="current-dashboard">{this.views[this.state.currentView - 1].view}</div>
             <div className="right-dashboard" onClick= {() => this.showRightView(this.state)}></div>
+          </div>
+          <div class="slide-status">
+            <div id="first" className="slide-pagination current-slide"></div>
+            <div id="second" className="slide-pagination"></div>
+            <div id="third" className="slide-pagination"></div>
           </div>
         </div>
       </React.Fragment>
