@@ -81,6 +81,10 @@ class App extends Component {
     indicators[currentSlideSelector - 1].classList.add('current-slide')
   }
 
+  componentShouldMount(){
+    setTimeout(200, () => {})
+  }
+
   render() {
     
     return (
