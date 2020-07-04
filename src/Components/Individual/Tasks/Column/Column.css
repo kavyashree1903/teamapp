@@ -3,10 +3,12 @@
     background: #C4C4C4;
     border-radius: 3vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     margin: 1vw;
     padding-bottom: 1vh;
+
 
 }
 .column-status{
@@ -29,6 +31,9 @@
     height: 4vh;
     margin-left: 2vw;
 
+}
+.task-list{
+    align-content: center;
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 
