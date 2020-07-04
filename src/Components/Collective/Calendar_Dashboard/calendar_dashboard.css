@@ -1,4 +1,4 @@
-.day-block{
+.day-block, .day-block-expanded{
 	width: 67vw;
 	height: 7vh;
 	background-color: #C4C4C4;
@@ -6,6 +6,7 @@
 	text-align: center;
 }
 .inner-container-for-calendar{
+	transition: 0.2s;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -15,5 +16,14 @@
 	margin-top: 1.8vh;
 	margin-bottom: 0;
 	font-size: 1.5vw;
+}
+.day-block-expanded{
+	margin-top: 2vh;
+}
+.inner-container-for-calendar-expanded{
+	transition: 0.2s;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
