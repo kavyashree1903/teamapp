@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './task_card.css'
-import {Draggable} from "react-smooth-dnd";
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {Draggable} from "react-beautiful-dnd";
 
 const Container = styled.div`
 margin-bottom:5vh;
@@ -19,15 +19,19 @@ class TaskCard extends Component{
 
 
 	render(){
-		return( <Draggable draggableId={this.props.task.id} index={this.props.index}>
-			{(provided, snapshot) => (
-			<Container
-				{...provided.draggableProps}
-				{...provided.dragHandleProps}
-				innerRef={provided.innerRef}
-			>{this.props.task.content}</Container>
-			)}
-			</Draggable>
+		return(
+            <Draggable draggableId={this.props.task.id} index={this.props.index}>
+                {(provided, snapshot) => (
+                    <Container
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        innerRef={provided.innerRef}
+                        isDragging={snapshot.isDragging}
+                    >
+                        {this.props.task.content}
+                    </Container>
+                )}
+            </Draggable>
 		)
 	}
 }

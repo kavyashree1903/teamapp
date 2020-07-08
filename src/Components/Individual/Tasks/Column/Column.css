@@ -5,9 +5,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 1vw;
     padding-bottom: 1vh;
+
 
 
 }
@@ -29,7 +30,7 @@
     text-align: center;
     width: 10vw;
     height: 4vh;
-    margin-left: 2vw;
+
 
 }
 .task-list{
