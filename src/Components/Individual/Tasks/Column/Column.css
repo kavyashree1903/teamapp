@@ -7,7 +7,6 @@
     justify-content: flex-start;
     margin: 1vw;
     padding-bottom: 1vh;
-
 }
 .column-status{
     width: 11vw;
@@ -20,7 +19,6 @@
     border-radius: 5vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
-
 }
 
 .column-heading{
@@ -28,7 +26,6 @@
     width: 10vw;
     height: 4vh;
     margin-left: 2vw;
-
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 
