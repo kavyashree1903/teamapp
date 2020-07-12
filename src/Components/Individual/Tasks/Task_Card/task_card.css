@@ -1,0 +1,10 @@
+.task-card{
+	position: relative;
+    width: 11vw;
+    min-height: 5vh;
+    height: max-content;
+    background: #FFFFFF;
+    border-radius: 1.5vh;
+    margin-bottom: 2vh;
+    overflow: scroll;
+}

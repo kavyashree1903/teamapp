@@ -1,18 +1,21 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import './task_card.css'
 
 class TaskCard extends Component{
 	constructor(props){
 		super(props)
-
 	}
+
 	render(){
 		return(
 			<React.Fragment>
 				<div className="task-card">
-					<span className="task-details"></span>
+					<div className="task-details"></div>
+					<p>{this.props.details}</p>
 				</div>
 			</React.Fragment>
 		)
 	}
 }
+
+export default TaskCard

@@ -1,31 +1,41 @@
 .task-column{
+    position: relative;
+    height: 55vh;
     width: 15vw;
     background: #C4C4C4;
     border-radius: 3vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 1vw;
+    margin: 0.8vw;
     padding-bottom: 1vh;
+    z-index: 0;
+    flex-wrap: wrap;
 }
 .column-status{
+    position: relative;
     width: 11vw;
     height: 3.5vh;
     font-family: Montserrat, Sans Serif;
     font-size: 1.5vw;
     text-align: center;
     background: #FFFFFF;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     border-radius: 5vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
+    z-index: 0;
 }
 
 .column-heading{
+    position: relative;
     text-align: center;
     width: 10vw;
     height: 4vh;
     margin-left: 2vw;
+    z-index: 0;
+}
+
+.task-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 
