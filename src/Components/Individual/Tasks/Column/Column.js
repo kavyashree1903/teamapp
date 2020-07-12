@@ -5,7 +5,7 @@ class Column extends Component {
 
 render() {
 	return (
-        <div className="task-column">
+        <div id={this.props.id} className="task-column">
         	<div className="column-heading">
         		<p className="column-status">{this.props.heading}</p>
         		<span className="task-list">

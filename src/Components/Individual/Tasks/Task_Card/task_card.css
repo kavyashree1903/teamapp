@@ -7,7 +7,9 @@
     border-radius: 1.5vh;
     margin-bottom: 2vh;
     overflow: scroll;
-    cursor: grab;
+    cursor: move;
 }
 .is-dragging{
+	background-color: #0186a6;
+	color: white;
 }
