@@ -92,7 +92,7 @@ class App extends Component {
             <div className="current-dashboard">{this.views[this.state.currentView - 1].view}</div>
             <div className="right-dashboard" onClick= {() => this.showRightView(this.state)}></div>
           </div>
-          <div class="slide-status">
+          <div className="slide-status">
             <div id="first" className="slide-pagination current-slide"></div>
             <div id="second" className="slide-pagination"></div>
             <div id="third" className="slide-pagination"></div>

@@ -7,4 +7,7 @@
     border-radius: 1.5vh;
     margin-bottom: 2vh;
     overflow: scroll;
+    cursor: grab;
+}
+.is-dragging{
 }
