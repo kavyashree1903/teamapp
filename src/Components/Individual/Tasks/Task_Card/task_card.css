@@ -1,7 +1,7 @@
 .task-card{
 	position: relative;
     width: 11vw;
-    min-height: 5vh;
+    min-height: 9vh;
     height: max-content;
     background: #FFFFFF;
     border-radius: 1.5vh;
