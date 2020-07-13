@@ -8,8 +8,15 @@
     margin-bottom: 2vh;
     overflow: scroll;
     cursor: move;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
+
 .is-dragging{
 	background-color: #0186a6;
 	color: white;
+}
+.make-invisible{
+	visibility: hidden;
 }

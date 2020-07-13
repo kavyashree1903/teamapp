@@ -18,10 +18,12 @@ class TaskDashboard extends Component {
 		tasks.forEach(task => {
 			task.addEventListener('dragstart', () => {
 				task.classList.add('is-dragging')
+				setTimeout(() => task.classList.add('make-invisible'), 0)
 			})
 
 			task.addEventListener('dragend', () => {
 				task.classList.remove('is-dragging')
+				task.classList.remove('make-invisible')
 				this.alloted    = [...document.querySelectorAll('#allotted.task-card')]
 				this.inProgress = [...document.querySelectorAll('#in-progress.task-card')]
 				this.inReview   = [...document.querySelectorAll('#in-review.task-card')]
@@ -32,6 +34,7 @@ class TaskDashboard extends Component {
 		})
 		columns.forEach((column, index) => {
 			column.addEventListener('dragover', event => {
+				event.preventDefault()
 				var taskCardsInColumn = [...column.querySelectorAll('.task-card:not(.is-dragging)')]
 				var mouseY = event.clientY
 				// var offset = Number.NEGATIVE_INFINITY

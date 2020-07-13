@@ -10,8 +10,9 @@ class TaskCard extends Component{
 		return(
 			<React.Fragment>
 				<div className="task-card" draggable="true">
-					<div className="task-details"></div>
-					<p>{this.props.details}</p>
+					<div className="task-details">
+						<p>{this.props.details}</p>
+					</div>
 				</div>
 			</React.Fragment>
 		)
