@@ -32,8 +32,8 @@
   border-spacing: 0;
   border-collapse: separate;
   background-color: #047082;
-  border-radius: 3px 3px 0 0;
-  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 6vh 6vh 0 0;
+  -webkit-border-radius: 6vh 6vh 0 0;
 }
 .tail-datetime-calendar .calendar-navi span {
   cursor: pointer;
@@ -150,8 +150,8 @@
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
+  border-radius: 6vh;
+  -webkit-border-radius: 6vh;
 }
 .tail-datetime-calendar
   .calendar-date
@@ -172,8 +172,8 @@
   display: table;
   text-align: center;
   background-color: #ffffff;
-  border-radius: 0 0 3px 3px;
-  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 6vh 6vh;
+  -webkit-border-radius: 0 0 6vh 6vh;
 }
 .tail-datetime-calendar .calendar-date + .calendar-time {
   border-top: 1px solid #d0d0d0;
@@ -217,8 +217,8 @@
   border-style: solid;
   border-color: #d0d0d0;
   background-color: #ffffff;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
+  border-radius: 6vh;
+  -webkit-border-radius: 6vh;
 }
 .tail-datetime-calendar
   .calendar-time
@@ -232,11 +232,11 @@
   input[type="number"]:focus {
   border-color: #7BD2D6;
 }
-.tail-datetime-calendar .calendar-time .calendar-field label {
+.tail-datetime-calendar .calendar-time .calendar-field .calendar-label {
   color: #778899;
-  /*margin: 5px 0 0 0;*/
   padding: 0;
   display: block;
   font-size: 12px;
   line-height: 12px;
+  width: 10vw;
 }
