@@ -250,7 +250,6 @@ export default class CalendarDashboard extends React.Component {
 
     return (
        <div className="outer-container-dashboard">
-//         <div className="background-for-dashboard">
      <div className="tail-datetime-calendar">
         <div className="calendar-navi">
           <span
@@ -299,7 +298,7 @@ export default class CalendarDashboard extends React.Component {
         )}
       </div>
       </div>
-      </div>
+    
     );
   }
 }
