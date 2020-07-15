@@ -9,7 +9,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #310887;
+	background-color: #047082;
 	/* 4dp — Elevation */
 }
 
@@ -36,6 +36,7 @@
 .left-hamburger{
 	position: fixed;
 	left: 0vh;
+	top: 0vh;
 	padding: 0vh;
 	border: none;
 	font-size: 0vh;
