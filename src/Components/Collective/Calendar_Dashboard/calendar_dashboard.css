@@ -109,12 +109,7 @@
   position: relative;
 }
 /* Select a Day */
-.tail-datetime-calendar .calendar-date table tbody tr > *.today {
-  color: #7BD2D6;
-}
-.tail-datetime-calendar .calendar-date table tbody tr > *.today:after {
-  border-color: #7BD2D6;
-}
+
 .tail-datetime-calendar .calendar-date table tbody tr > *:hover {
   color: #047082;
 }
@@ -239,4 +234,7 @@
   font-size: 12px;
   line-height: 12px;
   width: 10vw;
+}
+td.calendar-day{
+border: 1px solid black;
 }

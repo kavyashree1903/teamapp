@@ -2,6 +2,7 @@ import React from "react";
 import moment from "moment";
 import { range } from "moment-range";
 import "./calendar_dashboard.css";
+import Flippy, { FrontSide, BackSide } from "react-flippy";
 export default class CalendarDashboard extends React.Component {
   weekdayshort = moment.weekdaysShort();
 
@@ -11,7 +12,7 @@ export default class CalendarDashboard extends React.Component {
     showDateTable: true,
     dateObject: moment(),
     allmonths: moment.months(),
-    selectedDay: null
+    selectedDay: null,
   };
   daysInMonth = () => {
     return this.state.dateObject.daysInMonth();
@@ -24,9 +25,7 @@ export default class CalendarDashboard extends React.Component {
   };
   firstDayOfMonth = () => {
     let dateObject = this.state.dateObject;
-    let firstDay = moment(dateObject)
-      .startOf("month")
-      .format("d"); // Day of week 0...1..5...6
+    let firstDay = moment(dateObject).startOf("month").format("d"); // Day of week 0...1..5...6
     return firstDay;
   };
   month = () => {
@@ -35,27 +34,27 @@ export default class CalendarDashboard extends React.Component {
   showMonth = (e, month) => {
     this.setState({
       showMonthTable: !this.state.showMonthTable,
-     showDateTable: !this.state.showDateTable
+      showDateTable: !this.state.showDateTable,
     });
   };
-  setMonth = month => {
+  setMonth = (month) => {
     let monthNo = this.state.allmonths.indexOf(month);
     let dateObject = Object.assign({}, this.state.dateObject);
     dateObject = moment(dateObject).set("month", monthNo);
     this.setState({
       dateObject: dateObject,
       showMonthTable: !this.state.showMonthTable,
-      showDateTable: !this.state.showDateTable
+      showDateTable: !this.state.showDateTable,
     });
   };
-  MonthList = props => {
+  MonthList = (props) => {
     let months = [];
-    props.data.map(data => {
+    props.data.map((data) => {
       months.push(
         <td
           key={data}
           className="calendar-month"
-          onClick={e => {
+          onClick={(e) => {
             this.setMonth(data);
           }}
         >
@@ -91,10 +90,10 @@ export default class CalendarDashboard extends React.Component {
       </table>
     );
   };
-  showYearTable = e => {
+  showYearTable = (e) => {
     this.setState({
       showYearTable: !this.state.showYearTable,
-      showDateTable: !this.state.showDateTable
+      showDateTable: !this.state.showDateTable,
     });
   };
 
@@ -106,7 +105,7 @@ export default class CalendarDashboard extends React.Component {
       curr = "month";
     }
     this.setState({
-      dateObject: this.state.dateObject.subtract(1, curr)
+      dateObject: this.state.dateObject.subtract(1, curr),
     });
   };
   onNext = () => {
@@ -117,20 +116,20 @@ export default class CalendarDashboard extends React.Component {
       curr = "month";
     }
     this.setState({
-      dateObject: this.state.dateObject.add(1, curr)
+      dateObject: this.state.dateObject.add(1, curr),
     });
   };
-  setYear = year => {
+  setYear = (year) => {
     // alert(year)
     let dateObject = Object.assign({}, this.state.dateObject);
     dateObject = moment(dateObject).set("year", year);
     this.setState({
       dateObject: dateObject,
       showMonthTable: !this.state.showMonthTable,
-      showYearTable: !this.state.showYearTable
+      showYearTable: !this.state.showYearTable,
     });
   };
-  onYearChange = e => {
+  onYearChange = (e) => {
     this.setYear(e.target.value);
   };
   getDates(startDate, stopDate) {
@@ -143,21 +142,18 @@ export default class CalendarDashboard extends React.Component {
     }
     return dateArray;
   }
-  YearTable = props => {
+  YearTable = (props) => {
     let months = [];
-    let nextten = moment()
-      .set("year", props)
-      .add("year", 12)
-      .format("Y");
+    let nextten = moment().set("year", props).add("year", 12).format("Y");
 
     let tenyear = this.getDates(props, nextten);
 
-    tenyear.map(data => {
+    tenyear.map((data) => {
       months.push(
         <td
           key={data}
           className="calendar-month"
-          onClick={e => {
+          onClick={(e) => {
             this.setYear(data);
           }}
         >
@@ -196,7 +192,7 @@ export default class CalendarDashboard extends React.Component {
   onDayClick = (e, d) => {
     this.setState(
       {
-        selectedDay: d
+        selectedDay: d,
       },
       () => {
         console.log("SELECTED DAY: ", this.state.selectedDay);
@@ -204,7 +200,7 @@ export default class CalendarDashboard extends React.Component {
     );
   };
   render() {
-    let weekdayshortname = this.weekdayshort.map(day => {
+    let weekdayshortname = this.weekdayshort.map((day) => {
       return <th key={day}>{day}</th>;
     });
     let blanks = [];
@@ -215,14 +211,25 @@ export default class CalendarDashboard extends React.Component {
     for (let d = 1; d <= this.daysInMonth(); d++) {
       let currentDay = d == this.currentDay() ? "today" : "";
       daysInMonth.push(
-        <td key={d} className={`calendar-day ${currentDay}`}>
-          <span
-            onClick={e => {
-              this.onDayClick(e, d);
-            }}
+        <td className={`calendar-day ${currentDay}`} key={d}>
+          <Flippy
+            className={`calendar-day ${currentDay}`}
+            style={{ margin: "2px", borderRadius: "10px" }}
           >
-            {d}
-          </span>
+            <FrontSide
+              className={`calendar-day ${currentDay}`}
+              style={{ borderRadius: "10px" }}
+            >
+              <span
+                onClick={(e) => {
+                  this.onDayClick(e, d);
+                }}
+              >
+                {d}
+              </span>
+            </FrontSide>
+            <BackSide style={{ borderRadius: "10px" }}></BackSide>
+          </Flippy>
         </td>
       );
     }
@@ -245,62 +252,62 @@ export default class CalendarDashboard extends React.Component {
     });
 
     let daysinmonth = rows.map((d, i) => {
-      return <tr style={{height:"7vh"}}>{d}</tr>;
+      return <tr style={{ height: "7vh" }}>{d}</tr>;
     });
 
     return (
-       <div className="outer-container-dashboard">
-     <div className="tail-datetime-calendar">
-        <div className="calendar-navi">
-          <span
-            onClick={e => {
-              this.onPrev();
-            }}
-            class="calendar-button button-prev"
-          />
-          {!this.state.showMonthTable && (
+      <div className="outer-container-dashboard">
+        <div className="tail-datetime-calendar">
+          <div className="calendar-navi">
             <span
-              onClick={e => {
-                this.showMonth();
+              onClick={(e) => {
+                this.onPrev();
               }}
-              class="calendar-label"
+              class="calendar-button button-prev"
+            />
+            {!this.state.showMonthTable && (
+              <span
+                onClick={(e) => {
+                  this.showMonth();
+                }}
+                class="calendar-label"
+              >
+                {this.month()}
+              </span>
+            )}
+            <span
+              className="calendar-label"
+              onClick={(e) => this.showYearTable()}
             >
-              {this.month()}
+              {this.year()}
             </span>
-          )}
-          <span className="calendar-label" onClick={e => this.showYearTable()}>
-            {this.year()}
-          </span>
-           <span
-          onClick={e => {
-            this.onNext();
-          }}
-          className="calendar-button button-next"
-        />
-        </div>
-       
-        <div className="calendar-date">
-          {this.state.showYearTable && <this.YearTable props={this.year()} />}
-          {this.state.showMonthTable && (
-            <this.MonthList data={moment.months()} />
-          )}
-        </div>
-
-        {this.state.showDateTable && (
-          <div className="calendar-date">
-            <table className="calendar-day">
-              <thead>
-                <tr>{weekdayshortname}</tr>
-              </thead>
-              <tbody>{daysinmonth}</tbody>
-            </table>
+            <span
+              onClick={(e) => {
+                this.onNext();
+              }}
+              className="calendar-button button-next"
+            />
           </div>
-        )}
+
+          <div className="calendar-date">
+            {this.state.showYearTable && <this.YearTable props={this.year()} />}
+            {this.state.showMonthTable && (
+              <this.MonthList data={moment.months()} />
+            )}
+          </div>
+
+          {this.state.showDateTable && (
+            <div className="calendar-date">
+              <table className="calendar-day">
+                <thead>
+                  <tr>{weekdayshortname}</tr>
+                </thead>
+                <tbody>{daysinmonth}</tbody>
+              </table>
+            </div>
+          )}
+        </div>
       </div>
-      </div>
-    
     );
   }
 }
-
-
