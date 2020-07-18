@@ -298,7 +298,7 @@ export default class CalendarDashboard extends React.Component {
         )}
       </div>
       </div>
-    
+      </div>
     );
   }
 }
