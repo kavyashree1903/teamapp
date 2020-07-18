@@ -214,12 +214,9 @@ export default class CalendarDashboard extends React.Component {
         <td className={`calendar-day ${currentDay}`} key={d}>
           <Flippy
             className={`calendar-day ${currentDay}`}
-            style={{ margin: "2px", borderRadius: "10px" }}
+            style={{ margin: "2px", borderRadius:"10px"}}
           >
-            <FrontSide
-              className={`calendar-day ${currentDay}`}
-              style={{ borderRadius: "10px" }}
-            >
+            <FrontSide className={`calendar-day ${currentDay}`}  style={{borderRadius:"10px"}}>
               <span
                 onClick={(e) => {
                   this.onDayClick(e, d);
@@ -228,7 +225,7 @@ export default class CalendarDashboard extends React.Component {
                 {d}
               </span>
             </FrontSide>
-            <BackSide style={{ borderRadius: "10px" }}></BackSide>
+            <BackSide  style={{borderRadius:"10px"}}></BackSide>
           </Flippy>
         </td>
       );
