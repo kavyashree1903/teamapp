@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import './task_card.css'
 
