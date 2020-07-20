@@ -76,7 +76,6 @@ class TaskDashboard extends Component {
 	}
 
   render() {
-  	console.log(this.allotted)
 	return (
 	  <div className="outer-container-dashboard">
 		<div className="background-for-dashboard">
