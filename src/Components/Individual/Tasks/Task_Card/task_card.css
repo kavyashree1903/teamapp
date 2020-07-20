@@ -1,4 +1,4 @@
-
+.task-card{
 	position: relative;
     width: 11vw;
     min-height: 9vh;
@@ -19,3 +19,4 @@
 }
 .make-invisible{
 	visibility: hidden;
+}
