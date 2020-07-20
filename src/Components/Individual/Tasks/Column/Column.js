@@ -17,3 +17,4 @@ render() {
   }
 }
 export default Column;
+

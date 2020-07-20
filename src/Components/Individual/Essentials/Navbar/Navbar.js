@@ -25,6 +25,7 @@ class Navbar extends Component{
 		this.state = {
 			...this.offState
 		}
+
 		this.sideMenuButtonsLeft = [
 			{
 				name: "Team 1",
