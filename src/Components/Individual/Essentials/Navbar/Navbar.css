@@ -5,12 +5,19 @@
 	top: 0;
 	width: 100%;
 	padding: 0;
-	background-color: #047082;
 	height: 6vh;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #047082;
+	/* 4dp — Elevation */
 }
 
 .container-navbar, span{
 	text-align: center;
+}
+.container-navbar{
+	margin-top: 10px;
 }
 
 .app-title{
@@ -37,24 +44,20 @@
 	height:5vh;
 	width: 5vh;
 	margin: 1vh 2vh;
-	margin-top: 0.3vh;
+	margin-top: 0.75vh;
 	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-menu-50__2_.png');
 	background-repeat: no-repeat;
 	cursor: pointer;
 	background-size: 5vh 5vh;
 }
-.left-hamburger:hover{
-	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-menu-50__1_.png');
-	background-repeat: no-repeat;
-	cursor: pointer;
-}
+
 .right-hamburger{
 	position: fixed;
 	right: 0vh;
 	top: 0vh;
 	padding: 0vh;
 	border: none;
-	font-size: 0vh;
+	font-size: 1rem;
 	width: 5vh;
 	height:5vh;
 	margin: 1vh 2vh;
@@ -64,16 +67,9 @@
 	background-repeat: no-repeat;
 	background-size: 5vh 5vh;
 }
-.right-hamburger:hover{
-	background-image: url('https://ik.imagekit.io/m52sq26n4h/icons8-menu-50__1_.png');
-	background-repeat: no-repeat;
-	cursor: pointer;
-}
+
 
 div#nav{
 	margin-bottom: 0vh
 }
 
-.left-hamburger, .right-hamburger:hover{
-	font-color: #00C4C4;
-}

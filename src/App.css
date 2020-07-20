@@ -72,6 +72,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: nowrap;
+    overflow: scroll;
 }
 .outer-container-dashboard{
   border-radius: 6vh;  
