@@ -13,30 +13,38 @@ export default class CalendarDashboard extends React.Component {
     dateObject: moment(),
     allmonths: moment.months(),
     selectedDay: null,
-  };
+  }
+  ;
   daysInMonth = () => {
     return this.state.dateObject.daysInMonth();
-  };
+  }
+  ;
   year = () => {
     return this.state.dateObject.format("Y");
-  };
+  }
+  ;
   currentDay = () => {
     return this.state.dateObject.format("D");
-  };
+  }
+  ;
   firstDayOfMonth = () => {
     let dateObject = this.state.dateObject;
     let firstDay = moment(dateObject).startOf("month").format("d"); // Day of week 0...1..5...6
     return firstDay;
-  };
+  }
+  ;
   month = () => {
     return this.state.dateObject.format("MMMM");
-  };
+  }
+  ;
   showMonth = (e, month) => {
     this.setState({
       showMonthTable: !this.state.showMonthTable,
       showDateTable: !this.state.showDateTable,
-    });
-  };
+    }
+    );
+  }
+  ;
   setMonth = (month) => {
     let monthNo = this.state.allmonths.indexOf(month);
     let dateObject = Object.assign({}, this.state.dateObject);
@@ -45,8 +53,10 @@ export default class CalendarDashboard extends React.Component {
       dateObject: dateObject,
       showMonthTable: !this.state.showMonthTable,
       showDateTable: !this.state.showDateTable,
-    });
-  };
+    }
+    );
+  }
+  ;
   MonthList = (props) => {
     let months = [];
     props.data.map((data) => {
@@ -201,28 +211,30 @@ export default class CalendarDashboard extends React.Component {
   };
   render() {
     let weekdayshortname = this.weekdayshort.map((day) => {
-      return <th key={day}>{day}</th>;
+      return <th class="calendar-day" key={day}>{day}</th>;
     });
     let blanks = [];
     for (let i = 0; i < this.firstDayOfMonth(); i++) {
       blanks.push(<td className="calendar-day empty">{""}</td>);
     }
     let daysInMonth = [];
-    for (let d = 1; d <= this.daysInMonth(); d++) {
-      let currentDay = d == this.currentDay() ? "today" : "";
+    for (let day = 1; day <= this.daysInMonth(); day++) {
+      let currentDay = day == this.currentDay() ? "today" : "";
       daysInMonth.push(
-        <td className={`calendar-day ${currentDay}`} key={d}>
+        <td className={`calendar-day ${currentDay}`} key={day}>
           <Flippy
+          flipOnHover={true}
+          flipOnClick={false}
             className={`calendar-day ${currentDay}`}
             style={{ margin: "2px", borderRadius:"10px"}}
           >
             <FrontSide className={`calendar-day ${currentDay}`}  style={{borderRadius:"10px"}}>
               <span
-                onClick={(e) => {
-                  this.onDayClick(e, d);
+                onClick={(event) => {
+                  this.onDayClick(event, day);
                 }}
               >
-                {d}
+                {day}
               </span>
             </FrontSide>
             <BackSide  style={{borderRadius:"10px"}}></BackSide>
