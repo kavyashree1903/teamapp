@@ -1,10 +1,22 @@
-.task-card{
-    position: absolute;
-    width: 15.29vh;
-    height: 5.198vh;
+.task-board{
+	position: relative;
+    width: 11vw;
+    min-height: 9vh;
+    height: max-content;
     background: #FFFFFF;
-    box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 19px;
-    padding: 8px;
-    margin-bottom: 8px;
+    border-radius: 1.5vh;
+    margin-bottom: 2vh;
+    overflow: scroll;
+    cursor: move;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.is-dragging{
+	background-color: #0186a6;
+	color: white;
+}
+.make-invisible{
+	visibility: hidden;
 }
