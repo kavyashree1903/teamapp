@@ -92,6 +92,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  margin-top: 1px;
   /* border-spacing: 0;
   border-collapse: collapse; */
 }
@@ -106,7 +107,7 @@
   text-align: center;
   font-weight: normal;
   line-height: 35px;
-  border: 0px;
+  border-radius: 1vh;
   background: #0186a6;
 }
 
@@ -148,6 +149,7 @@
   color: #8899aa;
   /* cursor: not-allowed; */
   background-color: #efefef;
+  border-radius:10px;
 }
 
 /* .tail-datetime-calendar .calendar-date table tbody tr > *.empty:hover:after,
