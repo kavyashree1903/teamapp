@@ -92,8 +92,8 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  border-spacing: 0;
-  border-collapse: collapse;
+  /* border-spacing: 0;
+  border-collapse: collapse; */
 }
 
 .tail-datetime-calendar .calendar-date table thead tr > *,
@@ -125,12 +125,11 @@
 }
 
 /* Select a Day */
-.tail-datetime-calendar .calendar-date table tbody tr > *.today {
-  color: white;
-  background-color: #0186a6;
+/* .tail-datetime-calendar .calendar-date table tbody tr > *.today {
+  color: black;
   font-weight: bolder;
   border-radius: 10px;
-}
+} */
 
 .tail-datetime-calendar .calendar-date table tbody tr > *.today:after {
   /*border-color: #7BD2D6;*/
