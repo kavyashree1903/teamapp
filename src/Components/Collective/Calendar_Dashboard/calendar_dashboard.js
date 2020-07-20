@@ -182,7 +182,7 @@ export default class CalendarDashboard extends React.Component {
       <table className="calendar-month">
         <thead>
           <tr>
-            <th colSpan="4">Select a Yeah</th>
+            <th colSpan="4">Select an Year</th>
           </tr>
         </thead>
         <tbody>{yearlist}</tbody>
@@ -249,7 +249,7 @@ export default class CalendarDashboard extends React.Component {
     });
 
     let daysinmonth = rows.map((d, i) => {
-      return <tr style={{ height: "7vh" }}>{d}</tr>;
+      return <tr>{d}</tr>;
     });
 
     return (
