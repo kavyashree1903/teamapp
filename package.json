@@ -22,7 +22,7 @@
     "react-flippy": "^0.1.5",
     "react-infinite-calendar": "^2.3.1",
     "react-modal": "^3.11.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-scroll": "^1.7.16",
     "react-scroll-to-component": "^1.0.2",
     "react-smooth-dnd": "^0.11.1",
